@@ -1,6 +1,7 @@
 package com.mvictoriano.apirestpedidomvc.controller;
 
 import com.mvictoriano.apirestpedidomvc.model.domains.Pedido;
+import com.mvictoriano.apirestpedidomvc.model.domains.StatusPedido;
 import com.mvictoriano.apirestpedidomvc.model.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +26,7 @@ public class PedidoController {
     }
 
     @GetMapping("/status/{status}")
-    public List<Pedido> listarPedidosPorStatus(@PathVariable String status) {
+    public List<Pedido> listarPedidosPorStatus(@PathVariable StatusPedido status) {
         return pedidoService.buscarPorStatus(status);
     }
 

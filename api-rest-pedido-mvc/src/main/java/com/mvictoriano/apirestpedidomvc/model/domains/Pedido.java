@@ -34,6 +34,7 @@ public class Pedido {
     @Column(name = "data_pedido", nullable = false)
     private LocalDateTime dataPedido;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String status; // "PENDENTE", "PROCESSANDO", "ENTREGUE", "CANCELADO"
+    private StatusPedido status;
 }

@@ -1,6 +1,7 @@
 package com.mvictoriano.apirestpedidomvc.model.service;
 
 import com.mvictoriano.apirestpedidomvc.model.domains.Pedido;
+import com.mvictoriano.apirestpedidomvc.model.domains.StatusPedido;
 import com.mvictoriano.apirestpedidomvc.model.repository.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +26,7 @@ public class PedidoService {
         return pedidoRepository.findByClienteContainingIgnoreCase(cliente);
     }
 
-    public List<Pedido> buscarPorStatus(String status) {
+    public List<Pedido> buscarPorStatus(StatusPedido status) {
         return pedidoRepository.findByStatus(status);
     }
 
