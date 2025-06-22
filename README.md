@@ -19,7 +19,6 @@ Este projeto tem como objetivo a construção de uma API RESTful no domínio "Pe
 3. Acessar `http://localhost:8080/v1/pedido`
 
 ## Documentação
-- Diagramas arquiteturais em `/docs/diagrams`
 - Relatório completo em `/docs/relatorio.pdf`
 
 ## Endpoints
