@@ -1,4 +1,4 @@
-package com.mvictoriano.api_rest_pedido_mvc;
+package com.mvictoriano.apirestpedidomvc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.mvictoriano.api_rest_pedido_mvc;
+package com.mvictoriano.apirestpedidomvc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

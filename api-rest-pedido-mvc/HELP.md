@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.mvictoriano.api-rest-pedido-mvc' is invalid and this project uses 'com.mvictoriano.api_rest_pedido_mvc' instead.
+* The original package name 'com.mvictoriano.api-rest-pedido-mvc' is invalid and this project uses 'com.mvictoriano.apirestpedidomvc' instead.
 
 # Getting Started
 
