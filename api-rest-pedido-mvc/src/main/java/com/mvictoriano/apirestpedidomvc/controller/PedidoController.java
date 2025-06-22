@@ -4,6 +4,7 @@ import com.mvictoriano.apirestpedidomvc.model.domains.Pedido;
 import com.mvictoriano.apirestpedidomvc.model.domains.StatusPedido;
 import com.mvictoriano.apirestpedidomvc.model.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,13 +21,13 @@ public class PedidoController {
         return pedidoService.listarTodos();
     }
 
-    @GetMapping("/cliente/{cliente}")
-    public List<Pedido> listarPedidosPorCliente(@PathVariable String cliente) {
+    @GetMapping("/buscar-por-cliente")
+    public List<Pedido> buscarPorCliente(@RequestParam String cliente) {
         return pedidoService.buscarPorCliente(cliente);
     }
 
-    @GetMapping("/status/{status}")
-    public List<Pedido> listarPedidosPorStatus(@PathVariable StatusPedido status) {
+    @GetMapping("/buscar-por-status")
+    public List<Pedido> buscarPorStatus(@RequestParam StatusPedido status) {
         return pedidoService.buscarPorStatus(status);
     }
 
