@@ -6,6 +6,7 @@ import com.mvictoriano.apirestpedidomvc.model.repository.PedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,9 +32,11 @@ public class PedidoService {
     }
 
     public Pedido salvar(Pedido pedido) {
+        if(pedido.getDataPedido() == null) {
+            pedido.setDataPedido(LocalDateTime.now());
+        }
         return pedidoRepository.save(pedido);
     }
-
     public void deletar(Long id) {
         pedidoRepository.deleteById(id);
     }
